@@ -12,7 +12,7 @@ module Mailinabox
         self.faraday          =   {
           adapter:    :net_http,
           user_agent: 'Mail-in-a-box Ruby API Client',
-          verbose:    true
+          verbose:    false
         }
       end
       

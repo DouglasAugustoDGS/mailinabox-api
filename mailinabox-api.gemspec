@@ -24,11 +24,12 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   
   spec.add_dependency "faraday", "~> 0.15.2"
-  spec.add_dependency "faraday_middleware", "~> 0.12.2"
 
-  spec.add_development_dependency "bundler", "~> 1.16"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
-  
-  spec.add_development_dependency "pry", "~> 0.11.3"
+  spec.add_development_dependency "bundler",    "~> 1.16.2"
+  spec.add_development_dependency "rake",       "~> 12.3.1"
+  spec.add_development_dependency "rspec",      "~> 3.7.0"
+  spec.add_development_dependency "rdoc",       "~> 6.0.4"
+  spec.add_development_dependency "vcr",        "~> 4.0"
+  spec.add_development_dependency "webmock",    "~> 3.4.2"
+  spec.add_development_dependency "pry",        "~> 0.11.3"
 end

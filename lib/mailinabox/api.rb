@@ -1,6 +1,5 @@
 # Gems
 require "faraday"
-require "faraday_middleware"
 
 # Standard Lib
 require "json"

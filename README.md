@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-1. Configure the client using Mailinabox::Api.configure:
+1. Configure the client using Mailinabox::Api.configure (if you're using Rails, put this in an initializer):
 
 ```ruby
   ::Mailinabox::Api.configure do |config|

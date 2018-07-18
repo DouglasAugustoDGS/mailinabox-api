@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: HOST/admin/mail/users?format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mail-in-a-box Ruby API Client
+      Authorization:
+      - Basic BASIC_AUTH
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 18 Jul 2018 12:35:22 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3640'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - frame-ancestors 'none';
+    body:
+      encoding: UTF-8
+      string: |
+        [
+          {
+            "domain": "testdomain.com",
+            "users": [
+              {
+                "email": "admin@testdomain.com",
+                "mailbox_size": 109773,
+                "privileges": [
+                  "admin"
+                ],
+                "status": "active"
+              },
+              {
+                "email": "user@testdomain.com",
+                "mailbox_size": 701652,
+                "privileges": [],
+                "status": "active"
+              }
+            ]
+          }
+        ]
+    http_version: 
+  recorded_at: Wed, 18 Jul 2018 12:35:22 GMT
+recorded_with: VCR 4.0.0
